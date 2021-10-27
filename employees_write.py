@@ -3,11 +3,12 @@ import csv
 
 fields = ['address_id', 'department_id', 'manager_id', 'employee_id', 'name', 'age', 'salary']
 
-num_additions = input('How many employees are there? : ')
+num_additions = int(input('How many employees are there? : '))
 
 
 rows = []
-for i in num_additions:
+
+for i in range(num_additions):
   rows.append([])
   current = rows[-1]
   print('Adding new employee')
